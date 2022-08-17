@@ -94,7 +94,7 @@ run() {
     ensure_aws_credentials
     ensure_cluster
     
-    build_and_run_tests
+    #build_and_run_tests
     exit $?
 }
 

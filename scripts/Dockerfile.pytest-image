@@ -37,7 +37,7 @@ RUN mkdir -p $HOME/.kube
 COPY ${TEST_INFRA_PATH}/scripts/pytest-local-runner.sh .
 COPY ${TEST_INFRA_PATH}/scripts/lib/* ./lib/
 
-COPY ${TEST_INFRA_PATH}/scripts/web-identity-token* ${WEB_IDENTITY_TOKEN_DEST_PATH}
+#COPY ${TEST_INFRA_PATH}/scripts/web-identity-token* ${WEB_IDENTITY_TOKEN_DEST_PATH}
 
 # Run the tests
 ENTRYPOINT ["/bin/bash"]
